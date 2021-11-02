@@ -1,4 +1,3 @@
 FROM openjdk:17
-COPY . /app
-WORKDIR /app
-CMD java -jar discovery-1.0.0.jar
+COPY app/discovery-*.jar /discovery.jar
+CMD ["java","-jar","discovery-1.0.0.jar"]
